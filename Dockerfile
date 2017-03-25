@@ -82,7 +82,7 @@ RUN cd $APPDIR/readthedocs && \
 
 
 # Docker config
-EXPOSE 80
+EXPOSE 8000
 VOLUME [ "/app" ]
 
 CMD [ "supervisord", "-c", "/etc/supervisord.conf", "-n" ]

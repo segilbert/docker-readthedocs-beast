@@ -3,7 +3,7 @@ upstream readthedocs_server {
 }
 
 server {
-    listen 80 default;
+    listen 8000 default;
     # server_name *;
 
     client_max_body_size 256M;
@@ -50,7 +50,7 @@ server {
 }
 
 server {
-    listen 80;
+    listen 8000;
     server_name ~^(?<project>.+)\.{{PUBLIC_HOST_NAME}}$;
 
     access_log /app/logs/nginx-access-subdomain.log;
